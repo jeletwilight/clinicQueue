@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="20dp"
+        android:text="Register"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="@dimen/idField"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:maxLines="1"
+            android:layout_weight="13"
+            android:id="@+id/idText"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:textSize="20dp"
+            android:paddingRight="17.5dp"
+            android:paddingLeft="17.5dp"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"
+            android:background="@drawable/head_input_style" />
+
+
+        <EditText
+            android:id="@+id/setId"
+            android:layout_weight="25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_style"
+            android:hint="Username"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:nextFocusDown="@id/pwText"
+            android:nextFocusRight="@id/pwText"
+            android:nextFocusForward="@id/pwText"
+            android:textSize="20dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/idField"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:maxLines="1"
+            android:layout_weight="13"
+            android:id="@+id/pwText"
+            android:inputType="text"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:text="PW"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"
+            android:background="@drawable/head_input_style" />
+
+        <EditText
+            android:id="@+id/setPass"
+            android:layout_weight="25"
+            android:inputType="textPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:background="@drawable/edit_text_style"
+            android:hint="Password"
+            android:textSize="20dp"
+            android:maxLines="1"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:background="@drawable/violet_round_button"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        style="@style/ButtonStyle"
+        android:background="@drawable/gray_round_button"
+        android:text="Back" />
+
+
+
+
+</LinearLayout>

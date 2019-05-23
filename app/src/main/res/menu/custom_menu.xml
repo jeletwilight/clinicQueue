@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/profileName"
+        android:orderInCategory="300"
+        android:title="ProfileName"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_profile"
+        android:orderInCategory="300"
+        android:title="Profile"
+        android:icon="@drawable/profile"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/action_profile1"
+                android:orderInCategory="100"
+                android:title="My Profile"
+                app:showAsAction="never"></item>
+
+            <item
+                android:id="@+id/action_profile2"
+                android:orderInCategory="200"
+                android:title="My Room"
+                app:showAsAction="never"></item>
+
+            <item
+                android:id="@+id/action_profile3"
+                android:orderInCategory="300"
+                android:title="Log Out"
+                app:showAsAction="never"></item>
+        </menu>
+    </item>
+
+</menu>

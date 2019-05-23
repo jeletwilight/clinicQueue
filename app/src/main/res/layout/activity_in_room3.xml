@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorMain"
+    tools:context=".InRoom3Activity">
+
+    <RelativeLayout
+        android:background="@color/colorSubDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room 3"
+            android:textSize="40dp"
+            />
+
+        <Button
+            android:id="@+id/enter_room3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/gray_round_button"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:text="Enter" />
+
+        <Button
+            android:enabled="false"
+            android:id="@+id/exit_room3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/gray_round_button"
+            android:backgroundTint="@color/colorButtonRed"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:text="Exit" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor : "
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/doctor_room3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NULL"
+            android:textSize="20dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@color/colorSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Queue : "
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/queue_room3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="XX"
+            />
+
+        <TextView
+            android:id="@+id/phone_room3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="(NULL)"
+            android:textColor="@color/colorLightBlue"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/ShowField">
+
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient Information"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                />
+
+            <Button
+                android:id="@+id/refresh_room3"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_round_button"
+                android:backgroundTint="@color/colorLightBlue"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:text="Refresh"/>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name : "
+                />
+
+            <TextView
+                android:id="@+id/name_room3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NULL"
+                />
+
+            <TextView
+                android:id="@+id/gend_symb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ♂ "
+                android:textColor="@color/colorLightBlue"
+                />
+
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/gend_f3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ♀ "
+                android:textColor="@color/colorPink"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BloodType : "
+                />
+
+            <TextView
+                android:id="@+id/blood_room3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NULL"
+                />
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BirthDate : "
+                />
+
+            <TextView
+                android:id="@+id/birth_room3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NULL"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginHorizontal="15dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight : "/>
+
+            <TextView
+                android:id="@+id/weight_room3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NULL"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" kg."/>
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height : "/>
+
+            <TextView
+                android:id="@+id/height_room3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NULL"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" cm."/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginHorizontal="15dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Caution : "
+                />
+
+            <TextView
+                android:id="@+id/caution_room3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NULL"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginHorizontal="15dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient Note : "
+                />
+
+            <TextView
+                android:id="@+id/note_room3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NULL"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient Status : "
+                />
+
+            <TextView
+                android:id="@+id/pstate_room3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NULL"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:backgroundTint="@color/colorButtonGreen"
+            android:background="@drawable/gray_round_button"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/cured_room3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Cured Patient"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            />
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:background="@drawable/violet_round_button"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/findNext_room3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Find Waiting Patient"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            />
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:background="@drawable/gray_round_button"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/choose_room3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Choose Patient"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

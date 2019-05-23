@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain"
+    android:orientation="vertical"
+    tools:context=".Room4ChooseActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/colorWhite"
+        app:title="All Queue List"
+        android:background="@color/colorMainDark">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_queues_c4"
+        android:layout_weight="0.75"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_weight="0.25"
+        android:orientation="vertical"
+        android:gravity="bottom|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:gravity="center_horizontal|center_vertical"
+                android:id="@+id/choose_id_room4"
+                android:paddingLeft="5dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@drawable/white_field"
+                android:hint="Queue ID"
+                />
+
+            <Button
+                android:id="@+id/choose_btn_room4"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_round_button"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="Choose"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+
+                />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/back_btn_c4"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/violet_round_button"
+            android:text="Back"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="30dp"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
